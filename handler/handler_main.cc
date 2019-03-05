@@ -917,7 +917,7 @@ int HandlerMain(int argc,
 #if defined(OS_FUCHSIA)
       // TODO(scottmg): Process level file attachments, and for all platforms.
       nullptr,
-#elif defined(OS_WIN) || defined(OS_MACOSX)
+#else
       &options.attachments,
 #endif
       user_stream_sources);
